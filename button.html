@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="increment()">INCREAMENT</button>
+
+    <div id="count">0</div>
+
+    <button onclick="decrement()">DECREAMENT</button>
+
+    <script>
+       function increment() {
+        let count = document.getElementById("count");
+        count.innerHTML=parseInt(count.innerHTML) +1;
+       }
+
+       function decrement () {
+        let count = document.getElementById("count");
+        count.innerHTML = parseInt(count.innerHTML) -1;
+       }
+
+    </script>
+</body>
+</html>
