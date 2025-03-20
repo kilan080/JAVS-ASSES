@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- RANDOM GAME -->
+
+     <p id="push"></p>
+     <h2>JAVASCRIPT MATH RANDOM</h2>
+     <!-- <button onclick="document.getElementById('push').innerHTML = getRndInteger(0, 9)">PRESS ME!</button> -->
+      <button onclick="generateRandom()" >PRESS ME!</button>
+ 
+ 
+     <script>
+         
+ 
+         // const isLessThanFive = 5;
+         function getRndInteger(min, max) {
+            return  Math.floor(Math.random() * (max - min)) + min;
+ 
+         }
+ 
+         function generateRandom() {
+             const randomNum = getRndInteger(0,9);
+             document.getElementById('push').innerHTML = randomNum;
+             
+             if (randomNum <= 5) {
+                 alert('Positive')
+             } else if (randomNum > 5) {
+                 alert('Negative')
+             }
+ 
+         }
+     </script>
+</body>
+</html>

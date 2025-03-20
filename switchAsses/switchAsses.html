@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>SWITCH STATEMENT</h3>
+
+
+
+    <p id="date-display" style="font-size: 40px;"></p>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .purple {
+            color: purple;
+        }
+
+        .orange {
+            color: orange;
+        }
+
+        .pink {
+            color: pink;
+        }
+    </style>
+
+
+    <script>
+        const today = new Date();
+        const day = today.getDay(); // Sunday = 0, Monday = 1, ..., Saturday = 6
+        const dateDisplay = document.getElementById("date-display");
+
+
+        switch (day) {
+            case 0: // Sunday
+                dateDisplay.textContent = "It's Sunday!";
+                dateDisplay.className = "red";
+                break;
+            case 1: // Monday
+                dateDisplay.textContent = "It's Monday!";
+                dateDisplay.className = "blue";
+                break;
+            case 2: // Tuesday
+                dateDisplay.textContent = "It's Tuesday!";
+                dateDisplay.className = "green";
+                break;
+            case 3: // Wednesday
+                dateDisplay.textContent = "It's Wednesday!";
+                dateDisplay.className = "yellow";
+                break;
+            case 4: // Thursday
+                dateDisplay.textContent = "Today is Thursday!";
+                dateDisplay.className = "purple";
+                break;
+            case 5: // Friday
+                dateDisplay.textContent = "It's Friday!";
+                dateDisplay.className = "orange";
+                break;
+            case 6: // Saturday
+                dateDisplay.textContent = "It's Saturday!";
+                dateDisplay.className = "pink";
+                break;
+            default:
+                dateDisplay.textContent = "Error: Invalid day!";
+        }
+    </script>
+
+    <a href="http://127.0.0.1:5500/randomGame/randomGame.html"></a>
+
+    
+</body>
+</html>

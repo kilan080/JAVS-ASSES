@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="color: blue;">Looping an Array</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let fLen = fruits.length;
+
+        let text = "<ul>";
+        for (let i = 0; i < fLen; i++) {
+            text += "<li>" + fruits[i] + "</li>";
+        }
+        text += "</ul>";
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+    <footer style="background-color: green;">list of items</footer>
+
+    <a href="http://127.0.0.1:5500/switchAsses/switchAsses.html"></a>
+</body>
+</html>
